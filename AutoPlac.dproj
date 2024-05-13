@@ -155,6 +155,10 @@
             <Form>formAutomobili2</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="placanje.pas">
+            <Form>formPlacanje</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <None Include="sqlite.db"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>

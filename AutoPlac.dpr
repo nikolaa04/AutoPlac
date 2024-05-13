@@ -9,7 +9,8 @@ uses
   register in 'register.pas' {registerForm},
   prvastrana in 'prvastrana.pas' {prvaForm},
   automobili1 in 'automobili1.pas' {formAutomobili1},
-  automobili2 in 'automobili2.pas' {formAutomobili2};
+  automobili2 in 'automobili2.pas' {formAutomobili2},
+  placanje in 'placanje.pas' {formPlacanje};
 
 {$R *.res}
 
@@ -22,5 +23,6 @@ begin
   Application.CreateForm(TprvaForm, prvaForm);
   Application.CreateForm(TformAutomobili1, formAutomobili1);
   Application.CreateForm(TformAutomobili2, formAutomobili2);
+  Application.CreateForm(TformPlacanje, formPlacanje);
   Application.Run;
 end.
