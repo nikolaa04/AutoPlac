@@ -8,7 +8,8 @@ uses
   dm in 'dm.pas' {db},
   register in 'register.pas' {registerForm},
   prvastrana in 'prvastrana.pas' {prvaForm},
-  automobili1 in 'automobili1.pas' {automobili1Form};
+  automobili1 in 'automobili1.pas' {formAutomobili1},
+  automobili2 in 'automobili2.pas' {formAutomobili2};
 
 {$R *.res}
 
@@ -19,6 +20,7 @@ begin
   Application.CreateForm(Tdb, db);
   Application.CreateForm(TregisterForm, registerForm);
   Application.CreateForm(TprvaForm, prvaForm);
-  Application.CreateForm(Tautomobili1Form, automobili1Form);
+  Application.CreateForm(TformAutomobili1, formAutomobili1);
+  Application.CreateForm(TformAutomobili2, formAutomobili2);
   Application.Run;
 end.

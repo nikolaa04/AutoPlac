@@ -14109,6 +14109,7 @@ object loginForm: TloginForm
       TabOrder = 0
       object nazadButton: TButton
         Align = Center
+        StyleLookup = 'replytoolbuttonbordered'
         TabOrder = 0
         Text = 'Back'
         TextSettings.Trimming = None

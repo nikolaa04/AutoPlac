@@ -40,7 +40,7 @@ uses main, automobili1;
 procedure TprvaForm.loginButtonClick(Sender: TObject);
 begin
     prvaForm.hide;
-    automobili1Form.show;
+    formAutomobili1.show;
 end;
 
 procedure TprvaForm.logoutButtonClick(Sender: TObject);

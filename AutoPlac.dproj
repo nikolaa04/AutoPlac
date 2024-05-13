@@ -148,7 +148,11 @@
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="automobili1.pas">
-            <Form>automobili1Form</Form>
+            <Form>formAutomobili1</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="automobili2.pas">
+            <Form>formAutomobili2</Form>
             <FormType>fmx</FormType>
         </DCCReference>
         <None Include="sqlite.db"/>

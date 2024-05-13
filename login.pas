@@ -29,6 +29,7 @@ type
     { Private declarations }
   public
     { Public declarations }
+    ime1, prezime1: string
   end;
 
 var
@@ -36,67 +37,64 @@ var
 
 implementation
 
-uses main, dm,prvastrana;
+uses main, dm,prvastrana,placanje;
 
 {$R *.fmx}
 
 procedure TloginForm.loginButtonClick(Sender: TObject);
-var pwd: string;
+var
+  pwd: string;
 begin
-    if trim(editUsername.Text)='' then
+  if Trim(editUsername.Text) = '' then
+  begin
+    Showmessage('Molimo unesite username!');
+    editUsername.SetFocus;
+  end
+  else if Trim(editPassword.Text) = '' then
+  begin
+    Showmessage('Molimo unesite sifru!');
+    editPassword.SetFocus;
+  end
+  else
+  begin
+    // Validacija
+    with db do
     begin
-      Showmessage('Molimo unesite username!');
-      editUsername.SetFocus;
-    end
-    else
-    if trim(editPassword.Text)='' then
-    begin
-      Showmessage('Molimo unesite sifru!');
-      editPassword.SetFocus;
-    end
-    else
-    begin
-      //validate
-      with db do begin
-      dbAuto.open;
-      qtemp.sql.Clear;
-      qtemp.SQL.Text:='SELECT * FROM Kupci WHERE Username='+quotedstr(editUsername.Text);
-
+      dbAuto.Open;
+      qtemp.SQL.Clear;
+      qtemp.SQL.Text := 'SELECT * FROM Kupci WHERE Username=' + QuotedStr(editUsername.Text);
       qtemp.Open;
       if qtemp.RecordCount = 0 then
       begin
         ShowMessage('Username ne postoji!');
         editUsername.SetFocus;
       end
-      else begin
+      else
+      begin
         pwd := qtemp.FieldByName('Password').AsString;
-        if pwd=editPassword.Text then
-          begin
-            loginForm.hide;
+        if pwd = editPassword.Text then
+        begin
+          // Postavljanje imena i prezimena
+          loginForm.ime1 := qtemp.FieldByName('Ime').AsString;
+          loginForm.prezime1 := qtemp.FieldByName('Prezime').AsString;
 
-            if not assigned(prvaForm) then
-              prvaForm := TprvaForm.Create(self);
-              prvaForm.ShowModal(
-                procedure(ModalResult: Tmodalresult)
-                begin
-                  if ModalResult = mrClose then Application.Terminate
+          //PLacanje
+          formPlacanje.ime := ime1;
+          formPLacanje.prezime := prezime1;
 
-                end);
-
-          end
-          else
-          begin
-            ShowMessage('Pogresna sifra!');
-            editPassword.SetFocus;
-          end;
-
-      end;
-
+          loginForm.Hide;
+          prvaForm.Show;
+        end
+        else
+        begin
+          ShowMessage('Pogresna sifra!');
+          editPassword.SetFocus;
+        end;
       end;
     end;
-
-
+  end;
 end;
+
 
 procedure TloginForm.nazadButtonClick(Sender: TObject);
 begin

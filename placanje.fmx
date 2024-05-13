@@ -1,4 +1,4 @@
-object formAutomobili1: TformAutomobili1
+object formPlacanje: TformPlacanje
   Left = 0
   Top = 0
   Caption = 'Form1'
@@ -7,7 +7,6 @@ object formAutomobili1: TformAutomobili1
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  OnCreate = FormCreate
   DesignerMasterStyle = 0
   object slika: TLayout
     Align = Client
@@ -14124,7 +14123,7 @@ object formAutomobili1: TformAutomobili1
           Size.Width = 142.000000000000000000
           Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
-          Text = 'Kategorije'
+          Text = 'Placanje'
           TextSettings.Font.Family = 'Cascadia Mono'
           TextSettings.Font.Size = 24.000000000000000000
           TextSettings.Font.StyleExt = {00070000000000000004000000}
@@ -14136,44 +14135,86 @@ object formAutomobili1: TformAutomobili1
         Size.Height = 324.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
-        object Text2: TText
+        object username: TLayout
+          Align = Center
+          Margins.Bottom = 100.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object Text2: TText
+            Align = Client
+            Margins.Right = 120.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Broj kartice:'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          object editBrojKartice: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            StyleLookup = 'transparentedit'
+            TabOrder = 1
+            Margins.Left = 80.000000000000000000
+            Size.Width = 120.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object cbKartica: TCheckBox
           Align = Center
           Margins.Right = 100.000000000000000000
-          Margins.Bottom = 280.000000000000000000
-          Size.Width = 142.000000000000000000
-          Size.Height = 50.000000000000000000
+          Size.Width = 69.000000000000000000
+          Size.Height = 19.000000000000000000
           Size.PlatformDefault = False
-          Text = 'Automobili:'
-          TextSettings.Font.Family = 'Cascadia Mono'
+          TabOrder = 6
+          Text = 'Kartica'
         end
-        object cbIzaberiMarku: TComboBox
+        object cbGotovina: TCheckBox
           Align = Center
-          Margins.Bottom = 220.000000000000000000
-          Size.Width = 168.000000000000000000
-          Size.Height = 22.000000000000000000
+          Margins.Left = 100.000000000000000000
+          Size.Width = 85.000000000000000000
+          Size.Height = 19.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 2
+          TabOrder = 5
+          Text = 'Gotovinski'
         end
-        object confirmButton: TButton
+        object Layout1: TLayout
           Align = Center
-          Margins.Top = 270.000000000000000000
-          TabOrder = 0
-          Text = 'Confirm'
-          TextSettings.Trimming = None
-          OnClick = confirmButtonClick
-        end
-        object ListBox1: TListBox
-          Align = Center
+          Margins.Top = 100.000000000000000000
           Size.Width = 200.000000000000000000
-          Size.Height = 190.000000000000000000
+          Size.Height = 26.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 3
-          DisableFocusEffect = True
-          DefaultItemStyles.ItemStyle = ''
-          DefaultItemStyles.GroupHeaderStyle = ''
-          DefaultItemStyles.GroupFooterStyle = ''
-          Viewport.Width = 196.000000000000000000
-          Viewport.Height = 186.000000000000000000
+          object Text3: TText
+            Align = Client
+            Margins.Right = 120.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Adresa:'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+          end
+          object editAdresa: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            StyleLookup = 'transparentedit'
+            TabOrder = 1
+            Margins.Left = 80.000000000000000000
+            Size.Width = 120.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object cbDostava: TCheckBox
+          Align = Center
+          Margins.Top = 200.000000000000000000
+          Size.Width = 161.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          Text = 'Dostava na kucnu adresu?'
         end
       end
       object bot: TLayout
@@ -14183,11 +14224,25 @@ object formAutomobili1: TformAutomobili1
         Size.Height = 56.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
-        object nazadButton: TButton
+        object Button1: TButton
           Align = Center
+          Margins.Right = 70.000000000000000000
+          Size.Width = 67.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
           StyleLookup = 'replytoolbuttonbordered'
           TabOrder = 0
-          Text = 'Back'
+          Text = 'Nazad'
+          TextSettings.Trimming = None
+        end
+        object nazadButton: TButton
+          Align = Center
+          Margins.Left = 70.000000000000000000
+          Size.Width = 67.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Plati'
           TextSettings.Trimming = None
           OnClick = nazadButtonClick
         end
