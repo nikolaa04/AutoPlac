@@ -37,7 +37,7 @@ var
 
 implementation
 
-uses main, dm,prvastrana,placanje;
+uses main, dm,prvastrana,placanje,zakazivanje;
 
 {$R *.fmx}
 
@@ -81,6 +81,9 @@ begin
           //PLacanje
           formPlacanje.ime := ime1;
           formPLacanje.prezime := prezime1;
+          //Zakazivanje
+          formzakazivanje.ime := ime1;
+          formZakazivanje.prezime := prezime1;
 
           loginForm.Hide;
           prvaForm.Show;

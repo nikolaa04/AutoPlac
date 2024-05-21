@@ -13,8 +13,8 @@ object db: Tdb
       'DriverID=SQLite'
       'Database=C:\Users\nikol\AutoPlac\AutoPlac\sqlite.db')
     LoginPrompt = False
-    Left = 160
-    Top = 144
+    Left = 152
+    Top = 136
   end
   object qTemp: TFDQuery
     Connection = dbAuto
