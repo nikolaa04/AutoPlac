@@ -11,7 +11,10 @@ uses
   automobili1 in 'automobili1.pas' {formAutomobili1},
   automobili2 in 'automobili2.pas' {formAutomobili2},
   placanje in 'placanje.pas' {formPlacanje},
-  zakazivanje in 'zakazivanje.pas' {formZakazivanje};
+  zakazivanje in 'zakazivanje.pas' {formZakazivanje},
+  zaposleni in 'zaposleni.pas' {formZaposleni},
+  zaposleniMain in 'zaposleniMain.pas' {formZaposleniMain},
+  obavestenja in 'obavestenja.pas' {formObavestenja};
 
 {$R *.res}
 
@@ -26,5 +29,8 @@ begin
   Application.CreateForm(TformAutomobili2, formAutomobili2);
   Application.CreateForm(TformPlacanje, formPlacanje);
   Application.CreateForm(TformZakazivanje, formZakazivanje);
+  Application.CreateForm(TformZaposleni, formZaposleni);
+  Application.CreateForm(TformZaposleniMain, formZaposleniMain);
+  Application.CreateForm(TformObavestenja, formObavestenja);
   Application.Run;
 end.

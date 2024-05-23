@@ -163,6 +163,18 @@
             <Form>formZakazivanje</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="zaposleni.pas">
+            <Form>formZaposleni</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="zaposleniMain.pas">
+            <Form>formZaposleniMain</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="obavestenja.pas">
+            <Form>formObavestenja</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <None Include="sqlite.db"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
