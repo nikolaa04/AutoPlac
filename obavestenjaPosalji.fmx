@@ -1,4 +1,4 @@
-object formObavestenja: TformObavestenja
+object formPosalji: TformPosalji
   Left = 0
   Top = 0
   Caption = 'Form1'
@@ -7213,27 +7213,64 @@ object formObavestenja: TformObavestenja
         Size.Height = 324.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
-        object Posalji: TButton
+        object username: TLayout
           Align = Center
-          Margins.Bottom = 100.000000000000000000
-          Size.Width = 89.000000000000000000
-          Size.Height = 36.000000000000000000
+          Margins.Bottom = 150.000000000000000000
+          Size.Width = 170.000000000000000000
+          Size.Height = 26.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 4
-          Text = 'Posalji'
-          TextSettings.Trimming = None
-          OnClick = PosaljiClick
+          object Text2: TText
+            Align = Client
+            Margins.Right = 110.000000000000000000
+            Size.Width = 60.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Kome:'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+          object editKome: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            StyleLookup = 'transparentedit'
+            TabOrder = 1
+            TextSettings.FontColor = claWhite
+            Margins.Left = 60.000000000000000000
+            Size.Width = 110.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, Size, Style]
+          end
         end
-        object Button2: TButton
+        object Layout1: TLayout
           Align = Center
-          Margins.Top = 100.000000000000000000
-          Size.Width = 93.000000000000000000
-          Size.Height = 40.000000000000000000
+          Size.Width = 170.000000000000000000
+          Size.Height = 44.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 3
-          Text = 'Pogledaj'
-          TextSettings.Trimming = None
-          OnClick = Button2Click
+          object Text3: TText
+            Align = Client
+            Margins.Right = 110.000000000000000000
+            Size.Width = 60.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Poruka:'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+          object editPoruka: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            StyleLookup = 'transparentedit'
+            TabOrder = 1
+            TextSettings.FontColor = claWhite
+            Margins.Left = 60.000000000000000000
+            Size.Width = 110.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            StyledSettings = [Family, Size, Style]
+          end
         end
       end
       object bot: TLayout
@@ -7253,6 +7290,17 @@ object formObavestenja: TformObavestenja
           Text = 'Nazad'
           TextSettings.Trimming = None
           OnClick = Button1Click
+        end
+        object Posalji: TButton
+          Align = Center
+          Margins.Bottom = 100.000000000000000000
+          Size.Width = 89.000000000000000000
+          Size.Height = 36.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = 'Posalji'
+          TextSettings.Trimming = None
+          OnClick = PosaljiClick
         end
       end
     end

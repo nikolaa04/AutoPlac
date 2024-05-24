@@ -1,16 +1,16 @@
-object formObavestenja: TformObavestenja
+object formPogledaj: TformPogledaj
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Form2'
   ClientHeight = 480
-  ClientWidth = 640
+  ClientWidth = 624
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object slika: TLayout
     Align = Client
-    Size.Width = 640.000000000000000000
+    Size.Width = 624.000000000000000000
     Size.Height = 480.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
@@ -7172,12 +7172,12 @@ object formObavestenja: TformObavestenja
           FileName = 'C:\Users\nikol\AutoPlac\AutoPlac\slike\Backgorund 2.png'
         end>
       Align = Client
-      Size.Width = 640.000000000000000000
+      Size.Width = 624.000000000000000000
       Size.Height = 480.000000000000000000
       Size.PlatformDefault = False
       object top: TLayout
         Align = Top
-        Size.Width = 640.000000000000000000
+        Size.Width = 624.000000000000000000
         Size.Height = 100.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
@@ -7188,7 +7188,7 @@ object formObavestenja: TformObavestenja
           Margins.Right = 200.000000000000000000
           Position.X = 200.000000000000000000
           Position.Y = 50.000000000000000000
-          Size.Width = 240.000000000000000000
+          Size.Width = 224.000000000000000000
           Size.Height = 50.000000000000000000
           Size.PlatformDefault = False
           Stroke.Color = claWhite
@@ -7209,42 +7209,34 @@ object formObavestenja: TformObavestenja
       end
       object client: TLayout
         Align = Client
-        Size.Width = 640.000000000000000000
+        Size.Width = 624.000000000000000000
         Size.Height = 324.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
-        object Posalji: TButton
+        object ListBoxObavestenja: TListBox
           Align = Center
-          Margins.Bottom = 100.000000000000000000
-          Size.Width = 89.000000000000000000
-          Size.Height = 36.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 4
-          Text = 'Posalji'
-          TextSettings.Trimming = None
-          OnClick = PosaljiClick
-        end
-        object Button2: TButton
-          Align = Center
-          Margins.Top = 100.000000000000000000
-          Size.Width = 93.000000000000000000
-          Size.Height = 40.000000000000000000
+          Size.Width = 244.000000000000000000
+          Size.Height = 275.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 3
-          Text = 'Pogledaj'
-          TextSettings.Trimming = None
-          OnClick = Button2Click
+          DisableFocusEffect = True
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 240.000000000000000000
+          Viewport.Height = 271.000000000000000000
         end
       end
       object bot: TLayout
         Align = Bottom
         Position.Y = 424.000000000000000000
-        Size.Width = 640.000000000000000000
+        Size.Width = 624.000000000000000000
         Size.Height = 56.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         object Button1: TButton
           Align = Center
+          Margins.Right = 100.000000000000000000
           Size.Width = 67.000000000000000000
           Size.Height = 35.000000000000000000
           Size.PlatformDefault = False
@@ -7253,6 +7245,14 @@ object formObavestenja: TformObavestenja
           Text = 'Nazad'
           TextSettings.Trimming = None
           OnClick = Button1Click
+        end
+        object Button2: TButton
+          Align = Center
+          Margins.Left = 100.000000000000000000
+          TabOrder = 4
+          Text = 'Prikazi'
+          TextSettings.Trimming = None
+          OnClick = Button2Click
         end
       end
     end

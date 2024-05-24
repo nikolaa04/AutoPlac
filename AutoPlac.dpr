@@ -14,7 +14,9 @@ uses
   zakazivanje in 'zakazivanje.pas' {formZakazivanje},
   zaposleni in 'zaposleni.pas' {formZaposleni},
   zaposleniMain in 'zaposleniMain.pas' {formZaposleniMain},
-  obavestenja in 'obavestenja.pas' {formObavestenja};
+  obavestenja in 'obavestenja.pas' {formObavestenja},
+  obavestenjaPosalji in 'obavestenjaPosalji.pas' {formPosalji},
+  obavestenjaPogledaj in 'obavestenjaPogledaj.pas' {formPogledaj};
 
 {$R *.res}
 
@@ -32,5 +34,7 @@ begin
   Application.CreateForm(TformZaposleni, formZaposleni);
   Application.CreateForm(TformZaposleniMain, formZaposleniMain);
   Application.CreateForm(TformObavestenja, formObavestenja);
+  Application.CreateForm(TformPosalji, formPosalji);
+  Application.CreateForm(TformPogledaj, formPogledaj);
   Application.Run;
 end.

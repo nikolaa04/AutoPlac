@@ -175,6 +175,14 @@
             <Form>formObavestenja</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="obavestenjaPosalji.pas">
+            <Form>formPosalji</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="obavestenjaPogledaj.pas">
+            <Form>formPogledaj</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <None Include="sqlite.db"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
