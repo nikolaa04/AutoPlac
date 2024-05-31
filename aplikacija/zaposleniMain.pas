@@ -22,6 +22,8 @@ type
     Button1: TButton;
     procedure logoutButtonClick(Sender: TObject);
     procedure loginButtonClick(Sender: TObject);
+    procedure registerButtonClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,9 +35,15 @@ var
 
 implementation
 
-uses zaposleni, obavestenja;
+uses zaposleni, obavestenja,zaposleniRezervacije,zaposleniInventar;
 
 {$R *.fmx}
+
+procedure TformZaposleniMain.Button1Click(Sender: TObject);
+begin
+    formZaposleniMain.hide;
+    formZaposleniInventar.show;
+end;
 
 procedure TformZaposleniMain.loginButtonClick(Sender: TObject);
 begin
@@ -47,6 +55,12 @@ procedure TformZaposleniMain.logoutButtonClick(Sender: TObject);
 begin
     formZaposleniMain.hide;
     formZaposleni.show;
+end;
+
+procedure TformZaposleniMain.registerButtonClick(Sender: TObject);
+begin
+    formZaposleniMain.Hide;
+    formZaposleniRezervacije.show;
 end;
 
 end.

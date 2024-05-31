@@ -183,6 +183,30 @@
             <Form>formPogledaj</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="zaposleniServisi.pas">
+            <Form>formZaposleniServisi</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="zaposleniRezervacije.pas">
+            <Form>formZaposleniRezervacije</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="zaposleniOpremaZ.pas">
+            <Form>formZaposleniOpremaZ</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="zaposleniInventar.pas">
+            <Form>formZaposleniInventar</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="zaposleniAutomobili.pas">
+            <Form>formZaposleniAutomobili1</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="ZaposleniOpremaI.pas">
+            <Form>formZaposleniOprema1</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <None Include="sqlite.db"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>

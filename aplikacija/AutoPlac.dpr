@@ -16,7 +16,13 @@ uses
   zaposleniMain in 'zaposleniMain.pas' {formZaposleniMain},
   obavestenja in 'obavestenja.pas' {formObavestenja},
   obavestenjaPosalji in 'obavestenjaPosalji.pas' {formPosalji},
-  obavestenjaPogledaj in 'obavestenjaPogledaj.pas' {formPogledaj};
+  obavestenjaPogledaj in 'obavestenjaPogledaj.pas' {formPogledaj},
+  zaposleniServisi in 'zaposleniServisi.pas' {formZaposleniServisi},
+  zaposleniRezervacije in 'zaposleniRezervacije.pas' {formZaposleniRezervacije},
+  zaposleniOpremaZ in 'zaposleniOpremaZ.pas' {formZaposleniOpremaZ},
+  zaposleniInventar in 'zaposleniInventar.pas' {formZaposleniInventar},
+  zaposleniAutomobili in 'zaposleniAutomobili.pas' {formZaposleniAutomobili1},
+  ZaposleniOpremaI in 'ZaposleniOpremaI.pas' {formZaposleniOprema1};
 
 {$R *.res}
 
@@ -36,5 +42,11 @@ begin
   Application.CreateForm(TformObavestenja, formObavestenja);
   Application.CreateForm(TformPosalji, formPosalji);
   Application.CreateForm(TformPogledaj, formPogledaj);
+  Application.CreateForm(TformZaposleniServisi, formZaposleniServisi);
+  Application.CreateForm(TformZaposleniRezervacije, formZaposleniRezervacije);
+  Application.CreateForm(TformZaposleniOpremaZ, formZaposleniOpremaZ);
+  Application.CreateForm(TformZaposleniInventar, formZaposleniInventar);
+  Application.CreateForm(TformZaposleniAutomobili1, formZaposleniAutomobili1);
+  Application.CreateForm(TformZaposleniOprema1, formZaposleniOprema1);
   Application.Run;
 end.
