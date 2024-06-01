@@ -37,7 +37,7 @@ var
 
 implementation
 
-uses dm, main, zaposleniMain;
+uses dm, main, zaposleniMain, adminMain;
 {$R *.fmx}
 
 procedure TformZaposleni.loginButtonClick(Sender: TObject);
@@ -82,11 +82,21 @@ begin
             formZaposleni.ime1 := qtemp.FieldByName('Ime').AsString;
             formZaposleni.prezime1 := qtemp.FieldByName('Prezime').AsString;
             // Dozvoljen pristup aplikaciji
-            ShowMessage('Pristup dozvoljen!');
             // Ovdje možete dodati kod za otvaranje nove forme ili prelazak na sledeći ekran
 
-            formZaposleni.hide;
-            formZaposleniMain.show;
+            formZaposleni.Hide;
+            formZaposleniMain.Show;
+          end
+          else if zaposlen = 2 then
+          begin
+            // Postavljanje imena i prezimena
+            formZaposleni.ime1 := qtemp.FieldByName('Ime').AsString;
+            formZaposleni.prezime1 := qtemp.FieldByName('Prezime').AsString;
+            // Dozvoljen pristup admin panelu
+            ShowMessage('Dobrodošli, administrator!');
+
+            formZaposleni.Hide;
+            formAdminMain.Show;
           end
           else
           begin
@@ -102,6 +112,7 @@ begin
     end;
   end;
 end;
+
 
 
 procedure TformZaposleni.nazadButtonClick(Sender: TObject);

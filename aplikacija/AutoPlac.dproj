@@ -207,6 +207,38 @@
             <Form>formZaposleniOprema1</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="adminMain.pas">
+            <Form>formAdminMain</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="adminObavestenja.pas">
+            <Form>formAdminObavestenja</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="adminObavestenjaPosalji.pas">
+            <Form>formAdminObavestenjaPosalji</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="adminObavestenjaPogledaj.pas">
+            <Form>formAdminObavestenjaPogledaj</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="dodavanje.pas">
+            <Form>formDodavanje</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="dodavanjeOprema.pas">
+            <Form>formDodavanjeOprema</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="dodavanjeAutomobil.pas">
+            <Form>formDodavanjeAutomobil</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="evidencija.pas">
+            <Form>formEvidencija</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <None Include="sqlite.db"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>

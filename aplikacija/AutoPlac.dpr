@@ -22,7 +22,15 @@ uses
   zaposleniOpremaZ in 'zaposleniOpremaZ.pas' {formZaposleniOpremaZ},
   zaposleniInventar in 'zaposleniInventar.pas' {formZaposleniInventar},
   zaposleniAutomobili in 'zaposleniAutomobili.pas' {formZaposleniAutomobili1},
-  ZaposleniOpremaI in 'ZaposleniOpremaI.pas' {formZaposleniOprema1};
+  ZaposleniOpremaI in 'ZaposleniOpremaI.pas' {formZaposleniOprema1},
+  adminMain in 'adminMain.pas' {formAdminMain},
+  adminObavestenja in 'adminObavestenja.pas' {formAdminObavestenja},
+  adminObavestenjaPosalji in 'adminObavestenjaPosalji.pas' {formAdminObavestenjaPosalji},
+  adminObavestenjaPogledaj in 'adminObavestenjaPogledaj.pas' {formAdminObavestenjaPogledaj},
+  dodavanje in 'dodavanje.pas' {formDodavanje},
+  dodavanjeOprema in 'dodavanjeOprema.pas' {formDodavanjeOprema},
+  dodavanjeAutomobil in 'dodavanjeAutomobil.pas' {formDodavanjeAutomobil},
+  evidencija in 'evidencija.pas' {formEvidencija};
 
 {$R *.res}
 
@@ -48,5 +56,13 @@ begin
   Application.CreateForm(TformZaposleniInventar, formZaposleniInventar);
   Application.CreateForm(TformZaposleniAutomobili1, formZaposleniAutomobili1);
   Application.CreateForm(TformZaposleniOprema1, formZaposleniOprema1);
+  Application.CreateForm(TformAdminMain, formAdminMain);
+  Application.CreateForm(TformAdminObavestenja, formAdminObavestenja);
+  Application.CreateForm(TformAdminObavestenjaPosalji, formAdminObavestenjaPosalji);
+  Application.CreateForm(TformAdminObavestenjaPogledaj, formAdminObavestenjaPogledaj);
+  Application.CreateForm(TformDodavanje, formDodavanje);
+  Application.CreateForm(TformDodavanjeOprema, formDodavanjeOprema);
+  Application.CreateForm(TformDodavanjeAutomobil, formDodavanjeAutomobil);
+  Application.CreateForm(TformEvidencija, formEvidencija);
   Application.Run;
 end.
