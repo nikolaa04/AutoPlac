@@ -21,6 +21,11 @@ type
     Button1: TButton;
     Button2: TButton;
     Button3: TButton;
+    procedure Button2Click(Sender: TObject);
+    procedure registerButtonClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure logoutButtonClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,6 +37,38 @@ var
 
 implementation
 
+uses evidencijaAutomobil, evidencijaOprema,evidencijaServisi, finansije,adminmain;
+
 {$R *.fmx}
+
+procedure TformEvidencija.Button1Click(Sender: TObject);
+begin
+    formEvidencija.hide;
+    formEvidencijaServisi.show;
+end;
+
+procedure TformEvidencija.Button2Click(Sender: TObject);
+begin
+    formEvidencija.hide;
+    formEvidencijaAutomobil.show;
+end;
+
+procedure TformEvidencija.Button3Click(Sender: TObject);
+begin
+    formEvidencija.hide;
+    formFinansije.show;
+end;
+
+procedure TformEvidencija.logoutButtonClick(Sender: TObject);
+begin
+    formEvidencija.hide;
+    formAdminMain.show;
+end;
+
+procedure TformEvidencija.registerButtonClick(Sender: TObject);
+begin
+    formEvidencija.hide;
+    formEvidencijaOprema.show;
+end;
 
 end.

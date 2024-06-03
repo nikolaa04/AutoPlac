@@ -30,7 +30,14 @@ uses
   dodavanje in 'dodavanje.pas' {formDodavanje},
   dodavanjeOprema in 'dodavanjeOprema.pas' {formDodavanjeOprema},
   dodavanjeAutomobil in 'dodavanjeAutomobil.pas' {formDodavanjeAutomobil},
-  evidencija in 'evidencija.pas' {formEvidencija};
+  evidencija in 'evidencija.pas' {formEvidencija},
+  evidencijaAutomobil in 'evidencijaAutomobil.pas' {formEvidencijaAutomobil},
+  evidencijaOprema in 'evidencijaOprema.pas' {formEvidencijaOprema},
+  evidencijaServisi in 'evidencijaServisi.pas' {formEvidencijaServisi},
+  finansije in 'finansije.pas' {formFinansije},
+  prihodi in 'prihodi.pas' {formPrihodi},
+  rashodi in 'rashodi.pas' {formRashodi},
+  trenutnoStanje in 'trenutnoStanje.pas' {formTrenutnoStanje};
 
 {$R *.res}
 
@@ -64,5 +71,12 @@ begin
   Application.CreateForm(TformDodavanjeOprema, formDodavanjeOprema);
   Application.CreateForm(TformDodavanjeAutomobil, formDodavanjeAutomobil);
   Application.CreateForm(TformEvidencija, formEvidencija);
+  Application.CreateForm(TformEvidencijaAutomobil, formEvidencijaAutomobil);
+  Application.CreateForm(TformEvidencijaOprema, formEvidencijaOprema);
+  Application.CreateForm(TformEvidencijaServisi, formEvidencijaServisi);
+  Application.CreateForm(TformFinansije, formFinansije);
+  Application.CreateForm(TformPrihodi, formPrihodi);
+  Application.CreateForm(TformRashodi, formRashodi);
+  Application.CreateForm(TformTrenutnoStanje, formTrenutnoStanje);
   Application.Run;
 end.

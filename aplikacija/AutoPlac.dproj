@@ -239,6 +239,34 @@
             <Form>formEvidencija</Form>
             <FormType>fmx</FormType>
         </DCCReference>
+        <DCCReference Include="evidencijaAutomobil.pas">
+            <Form>formEvidencijaAutomobil</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="evidencijaOprema.pas">
+            <Form>formEvidencijaOprema</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="evidencijaServisi.pas">
+            <Form>formEvidencijaServisi</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="finansije.pas">
+            <Form>formFinansije</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="prihodi.pas">
+            <Form>formPrihodi</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="rashodi.pas">
+            <Form>formRashodi</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="trenutnoStanje.pas">
+            <Form>formTrenutnoStanje</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
         <None Include="sqlite.db"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>

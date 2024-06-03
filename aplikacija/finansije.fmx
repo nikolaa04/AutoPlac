@@ -1,4 +1,4 @@
-object formEvidencija: TformEvidencija
+object formFinansije: TformFinansije
   Left = 0
   Top = 0
   Caption = 'Form1'
@@ -11903,8 +11903,8 @@ object formEvidencija: TformEvidencija
           Size.Width = 112.000000000000000000
           Size.Height = 28.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 4
-          Text = 'Oprema'
+          TabOrder = 3
+          Text = 'Rashodi'
           TextSettings.Trimming = None
           OnClick = registerButtonClick
         end
@@ -12396,7 +12396,7 @@ object formEvidencija: TformEvidencija
           Size.Height = 30.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 1
-          Text = 'Zakazani servisi'
+          Text = 'Trenutno stanje'
           TextSettings.Trimming = None
           OnClick = Button1Click
         end
@@ -12406,21 +12406,10 @@ object formEvidencija: TformEvidencija
           Size.Width = 112.000000000000000000
           Size.Height = 28.000000000000000000
           Size.PlatformDefault = False
-          TabOrder = 3
-          Text = 'Automobili'
+          TabOrder = 2
+          Text = 'Prihodi'
           TextSettings.Trimming = None
           OnClick = Button2Click
-        end
-        object Button3: TButton
-          Align = Center
-          Margins.Top = 140.000000000000000000
-          Size.Width = 112.000000000000000000
-          Size.Height = 28.000000000000000000
-          Size.PlatformDefault = False
-          TabOrder = 2
-          Text = 'Finansije'
-          TextSettings.Trimming = None
-          OnClick = Button3Click
         end
       end
     end
